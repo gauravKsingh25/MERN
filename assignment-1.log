@@ -1,0 +1,29 @@
+ function displayDayAndTime() {
+  var currentDate = new Date();
+
+  var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var day = daysOfWeek[currentDate.getDay()];
+
+  var hours = currentDate.getHours();
+  var amOrPm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12 || 12; // Convert to 12-hour format
+  var minutes = currentDate.getMinutes();
+  var seconds = currentDate.getSeconds();
+
+  var formattedTime = hours + " " + amOrPm + " : " + padZero(minutes) + " : " + padZero(seconds);
+
+  console.log("Today is: " + day + ".");
+  console.log("Current time is: " + formattedTime + ".");
+}
+
+function padZero(num) {
+  
+  return (num < 10 ? "0" : "") + num;
+}
+
+
+displayDayAndTime();
+
+VM4051:15 Today is: Wednesday.
+VM4051:16 Current time is: 1 PM : 11 : 20.
+undefined
