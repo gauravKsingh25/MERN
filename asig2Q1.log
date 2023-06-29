@@ -1,0 +1,18 @@
+function evenOdd(a) {
+   
+    var sum1=0;
+    var sum2=0;
+var arr = a.toString().split('');
+   
+    for (var index =0; index <arr.length;index++){
+        if (index%2==0) {
+            sum1=sum1+parseInt(arr[index]);
+        }
+        
+        else{
+            sum2=sum2+parseInt(arr[index]);
+        }
+    }
+    console.log("even sum  "+sum2+"  oddsum  "+sum1);
+}
+undefined
