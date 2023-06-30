@@ -1,0 +1,30 @@
+function emplyoee(id,name,basic) {
+    function hra() {
+        return basic*.30;
+    }
+    function da() {
+        return basic*10;
+    }
+    function ta() {
+        return basic*20;
+    }
+    function gs() {
+        return basic + ta() +da() + hra();
+    }
+    function tax() {
+        return gs()*(0.1);
+    }
+    function ns() {
+        return gs()-tax();
+    }
+ function print() {
+     console.log(name + "have net salary of"+ ns());
+     console.log("salary calculated as" + gs()+"gernal salary ");
+ } 
+    print();
+}
+undefined
+emplyoee(2,"gaurav",40000);
+VM2571:21 gauravhave net salary of1126800
+VM2571:22 salary calculated as1252000gernal salary 
+undefined
