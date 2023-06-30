@@ -1,0 +1,10 @@
+function minMax(arr) {
+    var c=arr.sort();
+    console.log("min value"+c[0]);
+    console.log("    max value"+c[c.length-1]);
+}
+undefined
+minMax([10,20,30]);
+VM3281:3 min value10
+VM3281:4     max value30
+undefined
