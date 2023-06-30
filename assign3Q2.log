@@ -1,0 +1,25 @@
+function Triangle(A, B, C, callback) {
+  if (A === B && B === C) {
+    callback(true);
+  } else {
+    callback(false);
+  }
+}
+
+function isEquilateral(result) {
+  console.log(result);
+}
+
+
+
+
+undefined
+isEquilateral();
+VM5192:10 undefined
+undefined
+isEquilateral(2,2,2);
+VM5192:10 2
+undefined
+triangle(1,1,1);
+VM5043:3 true
+undefined
