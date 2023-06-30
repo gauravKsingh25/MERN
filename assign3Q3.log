@@ -1,0 +1,18 @@
+function anagram(str1,str2) {
+    let characters1 = str1.split('');
+    let characters2=str2.split('');
+    characters1.sort();
+    characters2.sort();
+    let st1=characters1.join('');
+    let st2=characters2.join('');
+    if(st1==st2){
+        console.log("anagram");
+    }
+    else{
+        console.log("not anagram");
+}
+}
+undefined
+anagram("army","myra");
+VM1071:9 anagram
+undefined
