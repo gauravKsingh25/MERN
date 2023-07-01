@@ -1,0 +1,140 @@
+var arr=[19,22,18,19,16,18,19,21,24];
+arr.filter(e=>e==19).length;
+3
+Q2
+VM93:1 Uncaught ReferenceError: Q2 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM93:1
+var str="brainmentors";
+const array=str.split('');
+var rev=array.slice().reverse();
+var d=rev.join();
+console.log(d);
+VM97:5 s,r,o,t,n,e,m,n,i,a,r,b
+undefined
+Q3
+VM106:1 Uncaught ReferenceError: Q3 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM106:1
+function countVowels(str) {
+  const vowels = str.match(/[aeiou]/gi);
+  return vowels ? vowels.length : 0; 
+}
+
+
+const totalVowels = array.map(countVowels).reduce((acc, count) => acc + count, 0);
+
+console.log(totalVowels);
+VM113:9 4
+undefined
+Q4
+VM122:1 Uncaught ReferenceError: Q4 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM122:1
+var jjjj=[1,2,3,4,];
+undefined
+jjjj.reduce((acc,e)=>acc+e,0);
+
+10
+Q5
+VM139:1 Uncaught ReferenceError: Q5 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM139:1
+var fff=['a','b','c','d'];
+undefined
+fff.sort((a,b)=>b.localeCompare(a));
+(4) ['d', 'c', 'b', 'a']
+Q6
+VM264:1 Uncaught ReferenceError: Q6 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM264:1
+arr;
+
+var h=arr.filter(e=>e!=19);
+
+h;
+(6) [22, 18, 16, 18, 21, 24]
+Q7
+VM339:1 Uncaught ReferenceError: Q7 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM339:1
+var z = Math.max(...arr);
+var n=arr.filter(e=>e!=z);
+n.sort();
+console.log(n[n.lenght-1]);
+VM343:4 undefined
+undefined
+Q8
+VM352:1 Uncaught ReferenceError: Q8 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM352:1
+const arr = [1, 2, 3, 4, 5];
+const steps = 2;
+const rotatedArray = rotateArray(arr, steps);
+
+ 
+function rotateArray(arr, steps) {
+  const rotation = steps % arr.length; 
+  if (rotation === 0) {
+    return arr; 
+  } else {
+    const rotatedPart = arr.splice(-rotation); 
+    return rotatedPart.concat(arr); 
+  }
+}
+
+VM356:1 Uncaught SyntaxError: Identifier 'arr' has already been declared
+
+const steps = 2;
+const rotatedArray = rotateArray(arr, steps);
+
+ 
+function rotateArray(arr, steps) {
+  const rotation = steps % arr.length; 
+  if (rotation === 0) {
+    return arr; 
+  } else {
+    const rotatedPart = arr.splice(-rotation); 
+    return rotatedPart.concat(arr); 
+  }
+}
+
+undefined
+rotateArray();
+VM398:7 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at rotateArray (<anonymous>:7:32)
+    at <anonymous>:1:1
+rotateArray @ VM398:7
+(anonymous) @ VM429:1
+q9
+VM439:1 Uncaught ReferenceError: q9 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM439:1
+var r1=[2,4,1,7,4,2];
+var r2=[5,1,4,7,3,1];
+var set=new Set(r1);
+var ggggg=r1.toString();
+const intersection = r2.filter(element =>( set.has(element)));
+var set2=new Set(intersection);
+undefined
+set
+Set(4) {2, 4, 1, 7}
+set2
+Set(3) {1, 4, 7}
+q10
+VM477:1 Uncaught ReferenceError: q10 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM477:1
+function removeDuplicates(arrr4) {
+	let unique = [];
+	arrr4.forEach(element => {
+		if (!unique.includes(element)) {
+			unique.push(element);
+		}
+	});
+	return unique;
+}
+console.log(removeDuplicates(arrr4));
+VM481:10 Uncaught ReferenceError: arrr4 is not defined
+    at <anonymous>:10:30
+(anonymous) @ VM481:10
